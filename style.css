@@ -1,0 +1,227 @@
+/* Para eliminar los espacios que se generan por default en html utilizamos el símbolo universal (*) */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F9FA;
+}
+
+.menu-container {
+    background-color: #D2E4E1;
+    color: #fff;
+    padding: 10px 10px 10px;
+
+    /* Habilitamos los poderes Flexbox | Cuando declaramos solo display flex puede que no pase nada, porque está esperando que le damos las órdenes correctas */
+    display: flex;
+    /* Mover toda esa caja horizontalmente*/
+
+    justify-content: right;
+
+}
+
+.logo-container {
+    width: 50%;
+}
+
+.logo {
+    height: 113px;
+}
+
+.menu {
+    width: 50%;
+    /* Flexibilizo la caja*/
+    display: flex;
+    align-items: end;
+    /* Con alineación horizontal también nos permite distribuir elementos en partes iguales con space-around o space-between */
+}
+
+.menu-button {
+    width: 20%;
+    display: flex;
+    background-color: #fff;
+    color: #EA9150;
+    border: 2px solid #EA9150;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 10px 0px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+}
+
+.product-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+}
+
+.product {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    /* Flexbox nos permite también alinear elementos de manera vertical */
+    align-items: center;
+
+    /* Flex-start center, flex-end, stretch, baseline */
+}
+
+.social {
+    align-self: flex-end;
+}
+
+.landing-image-container {
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.home-image {
+    background-image: url("images/panoramic/cliffsOfMoher.png");
+}
+
+.aboutus-image {
+    background-image: url("images/panoramic/cork.png");
+}
+
+.place-note {
+    width: 30%;
+}
+
+.place-name {
+    width: 70%;
+    align-items: end;
+    color: white;
+    justify-content: right;
+    display: flex;
+    padding-right: 10px;
+}
+
+.place-name h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.link-style {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; 
+}
+
+.paragraph {
+    width: 60%;
+}
+
+.paragraph p {
+    text-align: center;
+}
+
+.content-section {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid; 
+    margin-bottom: 13px;
+}
+
+.content-section-right-border {
+    border-radius: 0 90px 90px 0;
+}
+
+.content-section-left-border {
+    border-radius: 90px 0px 0px 90px;
+}
+
+.content-section-green {
+    border-color: #489083;
+    background-color: #D2E4E1;
+}
+
+.content-section-white {
+    border-color: #C3CFD9;
+    background-color: #fff;
+}
+
+.content-section-orange {
+    border-color: #E8833A;
+    background-color: #FAE6D8;
+}
+
+.content-section img {
+    height: 180px;
+}
+
+.text-content {
+    padding: 26px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 80%;
+    margin: auto;
+}
+
+.gallery img {
+    flex-grow: 1;
+    margin: 4px;
+    height: 180px;
+}
+
+.gallery .youtube-video {
+    width: 50%;
+    height: 280px;
+    z-index: 2;
+}
+
+.square-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #489083;
+}
+
+.square-container h2 {
+    margin-top: 10px;
+}
+
+.square-container img {
+    width: 400px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.rounded-text {
+    background-color: #D2E4E1;
+    border: 2px solid #489083;    
+    border-radius: 70px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.rounded-text p {
+    text-align: center;
+}
+
