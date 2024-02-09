@@ -82,6 +82,48 @@ html, body {
     border-radius: 5px;
 }
 
+.custom-img-container {
+    padding: 0 !important;
+}
+
+.custom-img-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #carouselExampleCaptions .carousel-caption {
+        display: block !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        bottom: 20px;
+    }
+
+    #carouselExampleCaptions .carousel-control-prev,
+    #carouselExampleCaptions .carousel-control-next {
+        filter: invert(100%);
+    }
+
+    #carouselExampleCaptions .carousel-control-prev-icon,
+    #carouselExampleCaptions .carousel-control-next-icon {
+        background-image: url('...');
+    }
+
+    .carousel-indicators {
+        bottom: -400px;
+    }
+
+    .custom-img-container img {
+        height: 200px;
+    }
+
+    .text-container {
+        margin-top: 400px;
+    }
+}
+
 
 /* Estilos previos a bootstrap */
 
@@ -144,20 +186,6 @@ html, body {
 .link-style {
     color: inherit;
     text-decoration: none;
-}
-
-.text-container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline; 
-}
-
-.paragraph {
-    width: 60%;
-}
-
-.paragraph p {
-    text-align: center;
 }
 
 .content-section {
