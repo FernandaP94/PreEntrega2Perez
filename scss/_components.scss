@@ -1,0 +1,76 @@
+#carouselExampleCaptions {
+    height: 600px;
+
+    .carousel-item {
+        height: 600px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+  
+    &.green-card {
+      border-color: #489083;
+      background-color: #D2E4E1;
+    }
+  
+    &.white-card {
+      border-color: #C3CFD9;
+      background-color: #fff;
+    }
+  
+    &.orange-card {
+      border-color: #E8833A;
+      background-color: #FAE6D8;
+    }
+  
+    .card-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .card-body {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .card-text {
+      margin: 0;
+      padding: 3px;
+      text-align: center;
+    }
+}
+
+.card-img-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+  
+.card-img-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px 20px 0 20px;
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
